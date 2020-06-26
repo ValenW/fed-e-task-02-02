@@ -5,7 +5,7 @@ const path = require('path')
 module.exports = merge(common, {
   mode: 'development',
   output: {
-    filename: 'bundle.js',
+    filename: 'bundle.[hash:8].js',
     path: path.join(__dirname, 'dist')
   },
   devtool: 'cheap-module-eval-source-map',

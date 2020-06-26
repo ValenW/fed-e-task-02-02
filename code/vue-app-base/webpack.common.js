@@ -8,7 +8,7 @@ module.exports = {
   mode: 'none',
   entry: './src/main.js',
   output: {
-    filename: 'bundle.[hash:8].js',
+    filename: 'bundle.js',
     path: path.join(__dirname, 'dist')
   },
   module: {
@@ -21,9 +21,6 @@ module.exports = {
         test: /\.js$/,
         use: {
           loader: 'babel-loader',
-          options: {
-            presets: ['@vue/babel-preset-app'],
-          },
         },
         exclude: file => /node_modules/.test(file) && !/\.vue.js/.test(file)
       },
