@@ -10,6 +10,9 @@
     "lint:style": "yarn stylelint **/*.{vue,htm,html,css,sss,less,scss,sass}",
     "lint:script": "yarn eslint --ext .js,.vue src/"
   },
+  "resolutions": {
+    "bin-wrapper": "npm:bin-wrapper-china"
+  },
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
@@ -28,6 +31,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
+    "imagemin-webpack-plugin": "^2.4.2",
     "less-loader": "^6.1.2",
     "style-loader": "^1.2.1",
     "stylelint": "^13.6.1",

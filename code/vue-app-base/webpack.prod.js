@@ -3,6 +3,7 @@ const merge = require('webpack-merge')
 const path = require('path')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const ImageminPlugin = require('imagemin-webpack-plugin').default
 
 module.exports = merge(common, {
   mode: 'production',
@@ -38,5 +39,6 @@ module.exports = merge(common, {
         from: 'public/**/*.ico'
       }]
     }),
+    new ImageminPlugin({ optimizationLevel: 9 })
   ]
 })
